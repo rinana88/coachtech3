@@ -263,6 +263,7 @@ header {
 
 }
 #food {
+  margin-bottom: 300px;
   
 }
 
@@ -294,15 +295,17 @@ header {
 .img_left {
   position: absolute;
   width: 50%;
-  z-index: 4;
+  z-index: 3;
   
 }
 
 .menu_box {
-  z-index:6;
+  z-index:10;
+  display: inline-block;
   top: 0%;
-  transform: translatey(20%);
-  left:70%;
+  left:80%;
+  
+
 }
 
 
@@ -320,13 +323,17 @@ header {
   position: absolute;
   z-index; 1;
   width: 95%;
-  height: 85vh;
-  max-height: 900px;
+  height: 650px;
   top: 50%;
   left: 50%;
   transform: translatex(-50%);
   
 }
+.setdrink p {
+  text-align: center;
+}
 
-
+#drink {
+  text-align: center;
+}
 
