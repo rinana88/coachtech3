@@ -176,9 +176,13 @@ body {
   line-height: 150%;
 
 }
-h1, h2, h3 {
+h1, h2, h3, th {
 font-weight: normal;  
+text-align: center;
+}
 
+p {
+  font-size: 18px;
 }
 .section_title {
   font-size: 40px;
@@ -273,22 +277,21 @@ header {
 /*food*/
 
 #food {
-  margin-bottom: 300px;
+  
   
 }
 
 .menu_title {
   text-align: center;
-  margin: 0 auto;
+   margin-bottom: 30px;
 }
 
 .menu_title h2 {
   font-size: 28px;
-
 }
 .menu_title p {
   font-size: 16px;
-  padding-bottom: 30px;
+  
 }
 #food {
   
@@ -300,72 +303,87 @@ header {
 
 .foodmenu_wrap {
   position: relative;
+  width: 100%;
+  margin-bottom: 110px;
+  margin-top: 90px;
+
   }
 .background {
-  transform: translatey(20%);
-  position: absolute;
   z-index; 1;
-  width: 85%;
+  width: 93%;
+  margin: 0 auto;
+  top: 20%;
   
-  top: 50%;
-  left:10%;
-  
-  
-  
-  
-}
+  }
 .img_left {
   position: absolute;
   width: 50%;
   z-index: 3;
-  
-  
-}
+  left: 0;
+  top: -5%;
+  }
 
 .menu_box {
   z-index:90;
   display: inline-block;
-  top: 60%;
+  top: 10%;
   right: 10%;
   position: absolute;
-  
-  transform: translatey(100%);
-  line-height: 2rem;
+  line-height: 3rem;
   color: #ffffff;
-  
   padding: 30px;
 }
   
-
-
 .img_right {
   position: absolute;
   width: 50%;
   z-index: 5;
   left: 50%;
-  top: 100%;
-  transform: translatey(100%);
-
-  
+  top: 43%;
 }
 /*set drink*/
+.setdrink {
+  padding-bottom: 50px;
+}
 .setdrink p {
   text-align: center;
-}
+  font-size: 18px;
+} 
 
 /*drink*/
 
 #drink {
-  text-align: center;
+  width: 100%;
+  padding: 50px 0 50px 0;
+  background: #FAF5EE;
+  
+}
+.drink_menu {
+  width: 40%;
+  margin: 0 auto;
+  
+}
+
+.drink_menu td {
+  height: 40px;
+  font-size: 18px;
+  }
+
+.td_left {
+  width: 80%;
+}
+.drink_menu th {
+  height: 60px;
+  font-size:28px;
+  
 }
 
 
 /*sweets*/
 #sweets {
-  
-
-
+  padding-top: 60px;
 }
+
 .sweets_wrap {
   display: flex;
 }
@@ -377,15 +395,24 @@ header {
   width:30%;
   background-color: #ACD184;
   color: #ffff;
-  font-size: 20px;
-  vertical-align: center;
+  
+  
 }
 
-.menu_box2 p {
-  vertical-align: center;
-  text-align: center;
-}
+.sweets_menu {
+  width: 90%;
+  text-align: left;
+  line-height: 4rem;
+  margin:0 auto;
+  padding: 20px 0 20px 0;
 
+}
+.illust {
+  width: 300px;
+  text-align: right;
+  padding-top: 20px;
+  
+}
 /*access*/
 
 #access {
@@ -394,6 +421,10 @@ header {
 #access p {
   text-align: center;
   line-height: 3rem;
+}
+#access h3 {
+  padding: 30px;
+  font-weight: bold;
 }
 
 .googlemap {
