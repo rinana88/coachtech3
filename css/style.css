@@ -214,6 +214,7 @@ a:hover{
 }
 
 /*その他のスタイル*/
+/*header*/
 header {
   position: fixed;
   top: 0;
@@ -232,6 +233,8 @@ header {
   font-size: 16px;
   
 }
+
+/*eyecatch*/
 .eyecatch {
   background-image: url(../img/eyecatch.jpg);
   
@@ -252,16 +255,23 @@ header {
   mix-blend-mode: screen;
   letter-spacing: 20px;
 }
+
+/*about*/
+
 #about {
   background-color: #FAF5EE;
   text-align: center;
   line-height: 50px;
+  padding-bottom: 100px;
   }
 
 .about-text {
-  padding-bottom: 70px;
+  
 
 }
+
+/*food*/
+
 #food {
   margin-bottom: 300px;
   
@@ -278,35 +288,54 @@ header {
 }
 .menu_title p {
   font-size: 16px;
+  padding-bottom: 30px;
 }
-
+#food {
+  
+  
+}
+.background {
+  
+}
 
 .foodmenu_wrap {
   position: relative;
-  padding-top: 30px;
+  }
+.background {
+  transform: translatey(20%);
+  position: absolute;
+  z-index; 1;
+  width: 85%;
+  
+  top: 50%;
+  left:10%;
+  
+  
   
   
 }
-
-
-
-
-
 .img_left {
   position: absolute;
   width: 50%;
   z-index: 3;
   
+  
 }
 
 .menu_box {
-  z-index:10;
+  z-index:90;
   display: inline-block;
-  top: 0%;
-  left:80%;
+  top: 60%;
+  right: 10%;
+  position: absolute;
   
-
+  transform: translatey(100%);
+  line-height: 2rem;
+  color: #ffffff;
+  
+  padding: 30px;
 }
+  
 
 
 .img_right {
@@ -314,26 +343,77 @@ header {
   width: 50%;
   z-index: 5;
   left: 50%;
-  top: 80%;
-  transform: translatey(80%);
+  top: 100%;
+  transform: translatey(100%);
+
   
 }
-.background {
-  background-color: #CAB6A3;
-  position: absolute;
-  z-index; 1;
-  width: 95%;
-  height: 650px;
-  top: 50%;
-  left: 50%;
-  transform: translatex(-50%);
-  
-}
+/*set drink*/
 .setdrink p {
   text-align: center;
 }
 
+/*drink*/
+
 #drink {
   text-align: center;
 }
+
+
+/*sweets*/
+#sweets {
+  
+
+
+}
+.sweets_wrap {
+  display: flex;
+}
+.sweets_img {
+  width: 70%;
+}
+
+.menu_box2 {
+  width:30%;
+  background-color: #ACD184;
+  color: #ffff;
+  font-size: 20px;
+  vertical-align: center;
+}
+
+.menu_box2 p {
+  vertical-align: center;
+  text-align: center;
+}
+
+/*access*/
+
+#access {
+  padding-bottom: 30px;
+}
+#access p {
+  text-align: center;
+  line-height: 3rem;
+}
+
+.googlemap {
+  margin: 0 auto;
+}
+
+/*footer*/
+footer {
+  height: 50px;
+  background-color: #CAB6A3;
+color: #ffff;
+border-top: solid 2px  #ACD184;
+}
+.copyright {
+  font-size: 14px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+
+  
+
 
