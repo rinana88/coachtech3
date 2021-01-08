@@ -287,10 +287,6 @@ header {
 
 /*food*/
 
-#food {
-  
-  
-}
 
 .menu_title {
   text-align: center;
@@ -343,7 +339,7 @@ header {
 
 .menu_title_en {
  vertical-align: middle;
- 
+ width: 90%;
  text-align: right;
  font-style: bold;
  
@@ -352,7 +348,7 @@ header {
 
 .menu_box,
 .menu_box_br {
-  padding: 20px 0 20px 0;
+  
   grid-column: 2/3;
   grid-row: 2/3;
   
@@ -360,8 +356,9 @@ header {
   color: #7D634A;
   font-size: 14px;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+
   
 }
 .menu_box {
@@ -377,6 +374,14 @@ background: #E8F2DC;
   list-style: none;
   text-align: center;
   box-align: center;
+  
+}
+
+.menu_box ul li p, .menu_box_br ul li p{
+  padding: 5px;
+  float: left;
+  
+  
 }
   
 .img_right,
@@ -424,41 +429,51 @@ background: #E8F2DC;
   width: 70%;
   border: 1px solid #7D634A;
   margin: 0 auto;
-  padding: 10px 0 40px 0;
+  padding: 10px 0 50px 0;
 }
 
 .drink_table {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   
 }
 
 .drink_menu_1,
 .drink_menu_2 {
-  width: 50%;
-  
+  width: 45%;
 }
+
+.drink_menu_2 {
+  border-left: dashed 1px #7D634A;
+}
+.drink_menu {
+  width: 90%;
+  margin: 0 auto;
+}
+
+
 
 
 .drink_menu td {
   height: 40px;
   font-size: 14px;
-  
-  
-  
-  
-  }
+  text-align: left;
+}
 
 .td_left {
   width: 40%;
+  padding-left: 40px;
+  box-sizing: berder-box;
   
 }
 .td_right {
   width: 10%;
+  text-align: left;
+  
 }
 
 .drink_menu th {
-  width: 50%;
+  width: 40%;
   height: 60px;
   font-size:20px;
   text-align: center;
@@ -468,8 +483,11 @@ background: #E8F2DC;
 
 
 /*sweets*/
+h2 {
+  font-size: 18px;
+}
 #sweets {
-  padding-top: 60px;
+  padding-top: 50px;
 }
 
 .sweets_wrap {
@@ -479,6 +497,7 @@ background: #E8F2DC;
 }
 .sweets_img {
   width: 70%;
+  display: block;
 }
 
 .menu_box2 {
@@ -534,7 +553,7 @@ background: #E8F2DC;
 }
 #googlemap {
   width: 60%;
-  padding: 10px;
+  
 }
 
 /*footer*/
@@ -551,6 +570,8 @@ footer {
 }
 
 @media screen and (max-width: 768px){
+
+
 
 #hamburger {
   width: 40px;
@@ -671,13 +692,13 @@ footer {
 .menu_title_en {
  vertical-align: middle;
  text-align: center;
- font-style: bold;
+ font-weight: bold;
 }
 
 
 .menu_box,
 .menu_box_br {
-  padding: 20px;
+  padding: 20px 0 20px 0;
   grid-column: 1/3;
   grid-row: 4/5;
   color: #7D634A;
@@ -686,6 +707,7 @@ footer {
   justify-content: center;
   align-items: center;
   width: 100%;
+
 }
 .menu_box {
   background: #E8F2DC;
@@ -701,6 +723,17 @@ footer {
   text-align: center;
   box-align: center;
   width: 100%;
+}
+
+.menu_box ul li, .menu_box_br ul li {
+  
+  text-align: center;
+  
+}
+.menu_box ul li p, .menu_box_br ul li p {
+  
+  text-align: center;
+  
 }
   
 .img_right {
@@ -719,7 +752,7 @@ footer {
 }
 
 .deco, .deco_br {
-  grid-row: 3/5;
+  grid-row: 3/4;
   height: 100%;
   width: 100%;
 }
@@ -731,6 +764,11 @@ footer {
 .deco_br {
   grid-column :2/3;
 
+}
+.setdrink {
+  width: 90%;
+  margin: 0 auto;
+  
 }
 
 
@@ -748,6 +786,7 @@ footer {
 .drink_table {
   width: 100%;
   display: block;
+  margin: 0 auto;
 }
 .drink_menu_1,.drink_menu_2 {
   width: 100%;
@@ -761,6 +800,14 @@ footer {
 }
 .td_right {
   width: 20%;
+}
+.drink_menu {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.drink_menu_2 {
+  border: none;
 }
 
 .drink_menu th {
@@ -789,6 +836,11 @@ footer {
   background-color: #ACD184;
   color: #ffff;
   box-sizing: border-box;
+  
+}
+
+.menu_box2 ul li {
+  display: flex;
 }
 
 .sweets_menu {
@@ -808,13 +860,14 @@ footer {
 .access_contents {
   width: 100%;
   text-align: center;
+  padding-bottom: 10px;
 }
 
 /*access*/
 #access p {
   text-align: center;
   line-height: 1.5rem;
-  font-size: 14px;
+  font-size: 13px;
 }
 #access h3 {
   padding: 20px;
@@ -823,6 +876,6 @@ footer {
 #googlemap {
   width: 100%;
   
-
+}
 
 
