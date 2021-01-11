@@ -355,9 +355,7 @@ header {
   width: 85%;
   color: #7D634A;
   font-size: 14px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+box-align: center;
 
   
 }
@@ -372,17 +370,25 @@ background: #E8F2DC;
 }
 .menu_box ul, .menu_box_br ul {
   list-style: none;
-  text-align: center;
-  box-align: center;
+  
   
 }
 
-.menu_box ul li p, .menu_box_br ul li p{
+.menu_box li, .menu_box_br li {
+  display: flex;
+  justify-content: space-between;
   padding: 5px;
-  float: left;
-  
-  
+  align-items: center;
 }
+  
+
+
+  
+  
+  
+
+
+
   
 .img_right,
 .img_right_br {
