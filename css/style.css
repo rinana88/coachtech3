@@ -263,7 +263,7 @@ header {
   
 .catchcopy {
   color: #e2e1e1;
-  font-size: 76px;
+  font-size: 70px;
   display: block;
   mix-blend-mode: screen;
   letter-spacing: 20px;
@@ -356,6 +356,8 @@ header {
   color: #7D634A;
   font-size: 14px;
 box-align: center;
+display: flex; 
+align-items: center;
 
   
 }
@@ -370,6 +372,8 @@ background: #E8F2DC;
 }
 .menu_box ul, .menu_box_br ul {
   list-style: none;
+  width: 90%;
+  margin: 0 auto;
   
   
 }
@@ -575,9 +579,9 @@ footer {
   vertical-align: middle;
 }
 
-@media screen and (max-width: 768px){
 
 
+@media screen and (max-width: 414px){
 
 #hamburger {
   width: 40px;
@@ -728,7 +732,8 @@ footer {
   list-style: none;
   text-align: center;
   box-align: center;
-  width: 100%;
+  width: 90%;
+  margin: 0 auto;
 }
 
 .menu_box ul li, .menu_box_br ul li {
@@ -869,7 +874,7 @@ footer {
   padding-bottom: 10px;
 }
 
-/*access*/
+/*access_respo*/
 #access p {
   text-align: center;
   line-height: 1.5rem;
@@ -885,3 +890,78 @@ footer {
 }
 
 
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1280px) {
+
+  .catchcopy {
+  color: #e2e1e1;
+  font-size: 40px;
+  display: block;
+  mix-blend-mode: screen;
+  width: 30%;
+  letter-spacing: 15px;
+  border: solid 1px #ffff;
+  padding: 20% 7% 20% 7%;
+  text-align: center;
+  line-height: 2em;
+  
+}
+.foodmenu_wrap, 
+.foodmenu_wrap_br {
+  padding-top: 40px;
+  padding-bottom: 100px;
+  margin: auto;
+  width: 80%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 0.1fr 2.5fr 2.5fr 0.5fr;
+  gap: 5px;
+ }
+
+.menu_box li, .menu_box_br li {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  align-items: center;
+}
+
+.menu_box,
+.menu_box_br {
+  
+  grid-column: 2/3;
+  grid-row: 2/3;
+  
+  width: 85%;
+  color: #7D634A;
+  
+box-align: center;
+display: flex; 
+align-items: center;
+}
+
+#drink {
+  width: 80%;
+  border: 1px solid #7D634A;
+  margin: 0 auto;
+  padding: 10px 0 50px 0;
+}
+
+.sweets_wrap {
+  width: 80%;
+  margin: auto;
+  display: flex;
+}
+
+.sweets_menu {
+  vertical-align: middle;
+  text-align: center;
+  font-size: 10px;
+  line-height: 1.5rem;
+  margin: auto;
+  padding: 10px 10px 10px 10px;
+  list-style: none;
+
+
+}
+}
